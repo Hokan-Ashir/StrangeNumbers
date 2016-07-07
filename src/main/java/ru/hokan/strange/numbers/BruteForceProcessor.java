@@ -1,8 +1,14 @@
+package ru.hokan.strange.numbers;
+
 /**
  * @author Ачкасов Антон
  */
 public class BruteForceProcessor implements StrangeNumberProcessor {
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void run(int highNumberNumbersBorder) {
         long highBorder = (long) Math.pow(10.0, highNumberNumbersBorder);
         long lowBorder = (long) Math.pow(10.0, highNumberNumbersBorder - 1);
@@ -22,6 +28,10 @@ public class BruteForceProcessor implements StrangeNumberProcessor {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean filter(long value) {
         String stringValue = String.valueOf(value);
         int checker = 0;

@@ -1,3 +1,5 @@
+package ru.hokan.strange.numbers;
+
 /**
  * @author Ачкасов Антон
  */
